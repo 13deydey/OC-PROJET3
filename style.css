@@ -593,12 +593,33 @@ main{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .main-container{
+        padding: 15px;
+    }
+
+    .filtres{
+        width: 100%;
+    }
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
     .hebergements {
         width: 100%;
+
+        .hebergement-cards{
+            justify-content: space-between;
+            gap: 5px;
+        }
+
+        .card{
+            width:32%;
+            height:207px;
+        }
+
+        .card-content{
+            height: auto;
+        }
     }
 
     .populaires {
@@ -608,12 +629,14 @@ main{
 
     .populaires-cards {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
     }
 
     .populaires-cards a {
-        width: 30%;
+        width: 335px;
     }
 
     .populaires-cards .card-title {
@@ -622,6 +645,30 @@ main{
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .activites-cards .card{
+        height: 270px;
+
+        img{
+            height:200px;
+        }
+    }
+
+    .pied-de-page{
+        width: 100%;
+        margin:0px; 
+
+        .aide{
+            width: 33%;
+
+            h2{
+                font-size: 18px;
+                width: 100%;
+            }
+                font-size: 16px;
+        }
+      
     }
 }
 
@@ -651,6 +698,7 @@ main{
     }
 
     .filtres{
+        width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -671,8 +719,19 @@ main{
         width: 100%;
         padding:5px; 
 
+        .hebergement-cards{
+            justify-content: center;
+        }
+
         .card{
-            width: 100%;
+            width: 243px;
+            height:207px;
+            padding: 0px;
+
+            img{
+                width: 100%;
+                margin:0px;
+            }
         }
     }
 
@@ -689,8 +748,12 @@ main{
         justify-content: space-between;
 
         a{
-            width: 100%;
+            width: 275px;
             margin: 0px;
+
+            article{
+                height: 146px;
+            }
         }
     }
 
@@ -710,14 +773,20 @@ main{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
+
+        gap:5px;
 
         .card{
-            width: 100%;
+            width: 48%;
             height: 200px;
-            margin: 10px;
 
             img{
-                height:150px;
+                height:141px;
+            }
+
+            figcaption{
+                padding-top: 5px;
             }
         }
     }
