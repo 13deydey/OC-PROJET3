@@ -56,11 +56,11 @@ main{
 
     margin-bottom: 30px;
 
-        img{
-            width: 61px;
-            height:19px;
-            padding: 15px;
-        }
+    img{
+        width: 61px;
+        height:19px;
+        padding: 15px;
+    }
 }
 
 .en-tete .nav{
@@ -68,21 +68,21 @@ main{
     justify-content: flex-end;
     align-items: start;
 
-        a{
-            padding-top:15px;
-            margin-left: 30px;
-            color: black;
-            text-decoration: none;
-            font-family: "Raleway", sans-serif;
-            border-top:3px solid white;
-        }
+    a{
+        padding-top:15px;
+        margin-left: 30px;
+        color: black;
+        text-decoration: none;
+        font-family: "Raleway", sans-serif;
+        border-top:3px solid white;
+    }
 
-        a:hover{
-            color: #0065FC;
-            border-top-width: 3px;
-            border-top-color: #0065FC ;
-            border-top-style: solid;
-        }
+    a:hover{
+        color: #0065FC;
+        border-top-width: 3px;
+        border-top-color: #0065FC ;
+        border-top-style: solid;
+    }
 }
 
 
@@ -627,14 +627,14 @@ main{
 
     .populaires-cards {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     }
 
     .populaires-cards a {
-        width: 335px;
+        width: 30%;
     }
 
     .populaires-cards h3 {
@@ -682,6 +682,11 @@ main{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+
+
+        .infos{
+            padding-top: 50px;
+        }
     }
     .search{
         font-size: 13px;
@@ -692,7 +697,7 @@ main{
         }
 
         button{
-            width: 70px;
+            width: 150px;
             font-size: 12px;
             font-weight: 500;
             padding:2px;
@@ -728,6 +733,7 @@ main{
                 }
             }
         }  
+
     }
     
    
